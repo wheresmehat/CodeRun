@@ -1,0 +1,193 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea:focus, input:focus {
+    outline: 0;
+}
+
+#headerEl {
+    width: 100%;
+    height: 40px;
+    background-color: #EEE;
+}
+
+#headerEl h1 {
+    float: left;
+    padding: 6px 0 0 10px;
+    margin: 0;
+    font-size: 1.4em;
+}
+
+#navLst {
+    padding-left: 40%;
+}
+
+#navLst ul {
+    list-style: none;
+    float: left;
+    padding: 0 3px;
+    margin-top: 8px;
+}
+
+#navLst li {
+    display: inline;
+    font-size: 1.2em;
+    padding: 0 8px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+#navLst li:first-child {
+    border-left: 1px solid #999;
+    border-radius: 6px 0 0 6px;
+
+}
+
+#navLst li:last-child {
+    border-right: 1px solid #999;
+    border-radius: 0 6px 6px 0;
+}
+
+#navLst li.activated {
+    background-color: #666;
+}
+
+#navLst li a {
+    color: #222;
+}
+
+#navLst li.activated a {
+    color: #EEE;
+    }
+
+#navLst li a:hover {
+    color: #666;
+}
+    
+#navLst li.activated a:hover {
+    color: #FFF;
+    }	
+
+#runDiv {
+    float: right;
+    font-size: 1.4em;
+    padding: 0 3px;
+    margin-top: 6px;
+    margin-right: 25px;
+    background-color: #666;
+    border: 1px solid #666;
+    border-radius: 6px;
+}
+
+#runDiv a {
+    color: #EEE;
+}
+
+#runDiv a:hover {
+    color: #FFF;
+}
+
+section {
+    clear: both;
+    overflow: auto;
+    width: 100%;
+    height: 100vh;	
+}
+
+#sectCode h4 {
+    margin: 0;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: rgba(34, 34, 34, 0.4);
+}
+
+article {
+    float: left;
+    width: 24.7%;
+    height: 100vh;	
+}
+
+article:nth-child(2) {
+    border-left: 1px solid #999;
+}
+
+article:nth-child(3) {
+    border-left: 1px solid #999;
+}
+
+article:nth-child(4) {
+    border-left: 1px solid #999;
+}
+
+article.dispNone {
+    display: none;
+}
+
+.textareaCode {
+    border: none;
+    width: 97%;
+    height: 88%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+@media only screen and (max-width: 610px) {
+    
+    body {
+        font-size: 0.8em;
+    }
+    
+    #navLst {
+        padding-left: 35%;
+    }	
+    
+    #headerEl {
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    
+    #navLst {
+        padding-left: 30%;
+    }	
+    
+    #runDiv {
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    body {
+        font-size: 1em;
+    }
+    
+    #navLst {
+        padding-left: 1%;
+    }	
+    
+    #headerEl {
+        height: 40px;
+    }
+    
+    #headerEl h1 {
+        display: none;
+    }
+    
+    
+}
+

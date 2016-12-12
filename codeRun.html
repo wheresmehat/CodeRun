@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>CodeRun</title>
+
+<link rel="stylesheet" href="codeRun.css">
+
+
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+
+	<header id="headerEl">
+    	<h1>CodeRun</h1>
+    	<nav id="navLst">
+        	<ul>
+                <li id="htmlBt" class="activated"><a href="#">HTML</a></li><li id="cssBt" class="activated"><a href="#">CSS</a></li><li id="jsBt" class="activated"><a href="#">JS</a></li><li id="resultBt" class="activated"><a href="#">Result</a></li>      
+          	</ul>
+        </nav>
+        <div id="runDiv"><a id="runAnchor" title="Ctrl + Enter" href="#">Run</a></div>
+    </header>
+        
+	<section id="sectCode">
+    	
+        <article id="htmlA">
+        	<h4>HTML</h4>
+        	<textarea class="tabIndent textareaCode" id="htmlI"></textarea>
+        </article>
+        
+    	<article id="cssA">
+       		<h4>CSS</h4>
+        	<textarea class="tabIndent textareaCode" id="cssI"></textarea>
+        </article>
+        
+        <article id="jsA">
+        	<h4>JS</h4>
+        	<textarea class="tabIndent textareaCode" id="jsI"></textarea>
+        </article>
+        
+        <article id="resultA">
+        	<h4>Result</h4>
+        </article>
+    </section>
+
+	<script src="tabIndent.js"></script>
+	<script type="text/javascript" src="codeRun.js"></script>
+	
+</body>
+</html>
