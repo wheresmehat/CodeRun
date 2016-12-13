@@ -1,6 +1,6 @@
 # CodeRun
-JSBin like clone
+JSBin inspired clone
+
+Check it out live: http://coderun.000webhostapp.com
 
 Comments coming soon!
-
-Check it out live: http://coderun.000webhostapp.com/#
