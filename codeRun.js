@@ -101,7 +101,7 @@ $(function() {
          $(".textareaCode").css("font-size", "1.2em")
     });
 
-   $("#bigF").on("click", function() {
+    $("#bigF").on("click", function() {
 
          $(".textareaCode").css("font-size", "1.4em")
     });
