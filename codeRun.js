@@ -91,6 +91,21 @@ $(function() {
     });
 
 
+    $("#smallF").on("click", function() {
+
+         $(".textareaCode").css("font-size", "1em")
+    });
+
+    $("#normalF").on("click", function() {
+
+         $(".textareaCode").css("font-size", "1.2em")
+    });
+
+    $("#bigF").on("click", function() {
+
+         $(".textareaCode").css("font-size", "1.4em")
+    });
+
     
     var resultFrame = (function() {
 
@@ -118,7 +133,9 @@ $(function() {
 
         $("#resultA").append(resultFrame);
 
+        resultFrame.contentWindow.document.open();
         resultFrame.contentWindow.document.write(frameContent);
+        resultFrame.contentWindow.document.close();
         
     });
 
