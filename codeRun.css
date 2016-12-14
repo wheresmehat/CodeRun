@@ -11,6 +11,7 @@ a {
 }
 
 textarea {
+    font-size: 1.2em;
     resize: none;
 }
 
@@ -29,6 +30,11 @@ textarea:focus, input:focus {
     padding: 6px 0 0 10px;
     margin: 0;
     font-size: 1.4em;
+}
+
+#optionDots {
+
+    color: #666;
 }
 
 #navLst {
@@ -143,6 +149,91 @@ article.dispNone {
     padding-left: 1%;
     padding-right: 1%;
 }
+
+
+
+.aside {
+  min-width: 150px;
+  width: 15%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fafafa;
+  border-right: 1px solid #333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  width: 0px;
+  min-width: 0px;
+  overflow: hidden;
+  transition: 0.35s width ease, 0.35s min-width ease;
+}
+
+.aside .aside-header {
+  background-color: #666;
+  padding: 0.4em;
+  padding-left: 0.5em;
+  border-bottom: 1px solid #444;
+  font-size: 1.2em;
+  color: #EEE;
+}
+
+.aside .aside-header .close {
+  float: right;
+  cursor: pointer;
+}
+
+.aside .aside-contents {
+  padding: 0.5em;
+  padding-bottom: 1em;
+}
+
+.aside ul {
+
+   list-style: none;
+   padding-left: 15px;
+
+}
+
+.aside-contents p {
+
+    font-weight: bold;
+    color: #222;
+}
+
+.aside li a {
+    color: #222;
+}
+
+.aside li a:hover {
+    color: #666;
+}
+    
+.aside.in {
+  width: 15%;
+  min-width: 150px;
+}
+
+.aside-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+  transition: 0.2s opacity ease;
+  opacity: 0;
+  display: none;
+}
+
+.aside-backdrop.in {
+  display: block;
+  opacity: 0.5;
+}
+
+
+
 
 
 @media only screen and (max-width: 610px) {
