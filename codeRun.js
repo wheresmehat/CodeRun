@@ -137,6 +137,7 @@ $(function() {
         resultFrame.contentWindow.document.write(frameContent);
         resultFrame.contentWindow.document.close();
         
+        $("body, #sectCode").animate({ scrollTop: 0 }, 1);
     });
 
 
